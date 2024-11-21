@@ -1,0 +1,167 @@
+.drawer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 385px;
+  right: 0;
+  height: 100%;
+  padding: 30px;
+
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.removeButton {
+  cursor: pointer;
+}
+
+.drawerHeader {
+  margin: 0 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.drawerTitle {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.cartItems {
+  flex: 1;
+  margin-bottom: 30px;
+  overflow-x: hidden;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  width: 325px;
+  height: 119px;
+}
+
+.cartImg {
+  margin-right: 20px;
+}
+
+.cartDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cartTitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+
+.cartPrice {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+.cartButton {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.cartFooter {
+  .greenButton {
+    &:hover {
+      img {
+        transform: translateX(5px);
+      }
+    }
+    img {
+      position: absolute;
+      right: 60px;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+
+.cartFooterItem {
+  margin-bottom: 19px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  b {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+.footerItemText {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.dashRow {
+  flex: 1;
+  height: 1px;
+  position: relative;
+  top: -3px;
+  border-bottom: 1px dashed #dfdfdf;
+}
+
+.greenButton {
+  $background-color: #97e53e;
+  $lightness: #bbf686;
+  $darkness: #7ed216;
+
+  margin-top: 24px;
+  padding: 22px 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  width: 325px;
+  height: 55px;
+  background-color: $background-color;
+
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $darkness;
+  }
+  &:active {
+    background-color: $lightness;
+  }
+}
+
+.none {
+    display: none !important;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}

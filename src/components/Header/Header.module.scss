@@ -1,0 +1,48 @@
+.header {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #eaeaea;
+  width: 1080px;
+  height: 0px;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #5c5c5c;
+  }
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+.headerTitle {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.headerRight {
+  display: flex;
+  gap: 30px;
+
+  img {
+    margin-right: 8px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
